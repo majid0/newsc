@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Adventure Machine</title>
+		<!-- Lato font link from google -->
+		<!-- Lato font link from google -->
+		
+		
+		<!-- Start general styles -->
+		<style type="text/css">
+			img{
+				max-width:100%;
+			}
+			body{
+				-webkit-font-smoothing:antialiased;
+				-webkit-text-size-adjust:none;
+				width:100% !important;
+				height:100%;
+				line-height:1.6em;
+			}
+			body{
+				background-color:#ffffff;
+			}
+			@media only screen and (max-width: 640px){
+				body{
+					padding:0 !important;
+				}
+			}	
+			@media only screen and (max-width: 640px){
+				h1{
+					font-size:22px !important;
+					font-weight:800 !important;
+					margin:20px 0 5px !important;
+				}
+			}	
+			@media only screen and (max-width: 640px){
+				h2{
+					font-size:18px !important;
+					font-weight:800 !important;
+					margin:20px 0 5px !important;
+				}
+			}	
+			@media only screen and (max-width: 640px){
+				h3{
+					font-size:0.7em !important;
+				}
+			}	
+			@media only screen and (max-width: 640px){
+				h4{
+					font-weight:800 !important;
+					margin:20px 0 5px !important;
+				}
+			}
+			@media only screen and (max-width: 640px){
+				img[class="sclogo"] {
+					max-width: 90%;
+					margin-bottom: 2px !important;
+					height: auto !important;
+				}
+			}
+			@media only screen and (max-width: 640px){
+				img[class="staypal"] {
+					max-width: 90%;
+					height: auto !important; 
+					margin-bottom: 2px !important;
+				}
+			}
+			@media only screen and (max-width: 640px){
+				table[class="cityimg"] {
+					display: block !important;
+					width: 100% !important;
+					height: auto !important;
+				}
+			}
+			@media only screen and (max-width: 640px){
+				span[class="staypalcol"] {
+					max-width: 6rem !important;
+				}
+			}
+			@media only screen and (max-width: 640px){
+				td[class="staypalinfo"] {
+					width:39px !important;
+					height: auto !important;
+					font-size: 12px !important;
+				}
+			}
+			@media only screen and (max-width: 640px){
+				.container{
+					padding:0 !important;
+					width:100% !important;
+				}
+			}	
+			@media only screen and (max-width: 640px){
+				.content{
+					padding:0 !important;
+				}
+			}
+			@media only screen and (max-width: 480px){
+				.map{
+					width: 90% !important;
+					height: auto  !important;
+				}
+			}
+			@media only screen and (max-width: 480px){
+				.button{
+					width: 90% !important;
+					height: auto  !important;
+					margin-top: 90px !important;
+				}
+			}
+			@media screen and (max-width: 481px) {
+			td[class="leftcolumn"] {
+			width: 100% !important;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+			}
+
+			/* force container nav to (horizontal) blocks */
+			td[class="leftcolumn"] {
+			display: block  !important;
+			}
+			}
+			
+			@media screen and (max-width: 481px) {
+			td[class="rightcolumn"] {
+			width: 100% !important;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+			margin-top: 10px !important;
+			}
+
+			/* force container nav to (horizontal) blocks */
+			td[class="rightcolumn"] {
+			display: block  !important;
+			}
+			}
+			
+		</style>
+		<!-- End general styles -->
+	</head>
+
+	<body style="font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; font-size: 14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em; background-color: #E5E5E5; margin: 0;" bgcolor="#E5E5E5">
+
+		<!-- Google font - lato -->
+
+		<!-- Start main table -->
+		<table style="font-family: Arial, Helvetica, sans-serif; font-size:14px; width:100%; background-color:#E5E5E5; margin:0;" bgcolor="#E5E5E5">
+			<tbody>
+				<!-- Start Main/parent row -->
+				<tr style="font-family: Arial, Helvetica, sans-serif; font-size:14px; margin:0;">
+					<!-- Start Main td -->
+					<td class="container" width="660" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;vertical-align:top;display:block !important;max-width:660px !important;clear:both !important;margin:0 auto;" valign="top">
+						<!-- Start Wrapper -->
+						<div class="content" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;display:block;margin:0 auto;padding:30px;">
+							<!-- Start Header and content table -->
+							<table width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;background-color:#ffffff;margin:0;border:0px solid #C4C4C4;" bgcolor="#ffffff">
+								<!-- Start Header logo -->
+								<tr style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+									<td style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;" width="100%" height="40">
+									</td>
+								</tr>
+								<tr style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+									<td style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;" width="100%" align="center" bgcolor="#fff">
+										<img  width="22%" height="auto" class="sclogo" src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/c2f7329f-3614-45bc-811c-b4269a3471da.png" alt="logo" border="0">
+									</td>
+								</tr>
+								<tr>
+									<td width="100%" height="47">
+									</td>
+								</tr>
+								<!-- End Header logo -->
+								
+								<!-- Start header -->
+								<tr style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0;">
+									<td style="font-family: Arial, Helvetica, sans-serif;font-size:36px;line-height:1.35;color:#000000;font-weight:900;padding: 22px 0px ;" bgcolor="#F18472" valign="top">
+										<p style="margin: 0;color: #ffffff;font-size: 36px;font-weight: 700; text-align: center;line-height: 1.2;">Adventure Machine</p>
+										<p style="margin: 0;color: #ffffff;font-size: 14px;font-weight: 400; text-align: center;line-height: 1;"><br />Cheap Flight Deals + StayPals<br />Paradise found.</p>
+									</td>
+								</tr>
+								<!-- End header -->
+								<!-- Start Staypal -->
+								<tr>
+									<td width="100%" align="center" valign="top" >
+										<table width="100%">
+											<tr>
+												<td width="21%" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0;"bgcolor="#ffffff" align="center" valign="top">&nbsp;
+												</td>
+												<td width="55%" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0;"bgcolor="#ffffff" align="center" valign="top">
+													<table width="100%" >
+															<tr>
+																<td  width="100%" style="font-family: Arial, Helvetica, sans-serif;font-size:25px;margin:0; color:#2F80ED; line-height:1.6em; font-weight:700" width="100%" bgcolor="#ffffff" align="center" valign="top">
+																	Paris, France-$305(rt)
+																</td>
+															</tr>
+															<tr>
+																<td width="100%"  style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0; color:#2F80ED; line-height:1.3em; font-style:regular; font-weight:400" width="100%" bgcolor="#ffffff" align="center" valign="top">
+																	Go see and stay with these beautiful people...
+																</td>
+															</tr>
+															<tr>
+																<td height="5px">
+																</td>
+															</tr>
+															<tr>
+																<td width="100%"  style="font-family: Arial, Helvetica, sans-serif;" align="center" valign="center">
+																	<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" class="staypal" alt="StayPals Pics" width="50%" style="width: 16.66%; height:auto;border-radius: 50%; vertical-align: middle; display: inline-block;float:left;">
+																	<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" class="staypal" alt="StayPals Pics" width="50%" style="width: 16.66%; height:auto; border-radius:50%; vertical-align: middle; display: inline-block;float:left;">
+																	<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" class="staypal" alt="StayPals Pics" width="50%" style="width: 16.66%; height:auto; border-radius:50%; vertical-align: middle; display: inline-block;float:left;">
+																	<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" class="staypal" alt="StayPals Pics" width="50%" style="width: 16.66%; height:auto; border-radius:50%; vertical-align: middle; display: inline-block;float:left;">
+																	<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" class="staypal" alt="StayPals Pics" width="50%" style="width: 16.66%; height:auto; border-radius:50%; vertical-align: middle; display: inline-block;float:left;">
+																	<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" class="staypal" alt="StayPals Pics" width="50%" style="width: 16.66%; height:auto; border-radius:50%; vertical-align: middle; display: inline-block;float:left;">
+																</td>
+															</tr>
+													</table>
+												</td>
+												<td width="24%" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:0;" bgcolor="#ffffff" align="center" valign="bottom">
+													<table align="center">
+														<tr>
+															<td bgcolor="#2F80ED" style="padding: 8px 10px 8px 10px; -webkit-border-radius:5px;border-color:#2F80ED;border-style:solid;border-width:0px; border-radius:5px; float:right;" align="center"><a href="https://staycircles.com/" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size:10px; font-style:normal; line-height:normal; line-height:1.1em; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block;">Search<br />StayCircles<br />Map</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+								<!-- End Staypal -->
+								<tr>
+									<td height="55px">
+									</td>
+								</tr>
+								<!-- Start City Images -->
+								<tr style="font-family: 'Lato', sans-serif;font-size:14px;margin:0;">
+									<td width="100%" style="font-family: 'Lato', sans-serif;font-size:14px;vertical-align:top;margin:0;padding: 0;" class="half">
+										<table width="100%" height="197px" cellpadding="0" cellspacing="0" style="font-family: 'Lato', sans-serif;font-size:14px;margin:0;" class="cityimg">
+											<tr style="font-family: 'Lato', sans-serif;font-size:1.22rem;margin:0;">
+												<td  style="font-family: Arial, Helvetica, sans-serif; font-size:14px;vertical-align:top;margin:0;max-height:196px">
+													<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/195480df-c420-4327-ae1b-53b8e75f50b3.png" alt="City Image" width="100%" style="margin: 0;width: 52%; height: auto !important;; margin: auto; vertical-align: middle; display: inline;float:left;" class="cityimg"/>
+													<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/29d95723-a86b-4722-8b6d-e3ec54c35cd7.png" alt="City Image" width="100%" style="margin: 0;width: 48%; height: auto !important;; margin: auto; vertical-align: middle; display: inline;float:left;" class="cityimg"/>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- End City Images -->
+								<!-- Devider -->
+								<tr>
+									<td height="35px">
+									</td>
+								</tr>
+								<tr>
+									<td width="100%">
+										<table width="100%">
+											<tr>
+												<td width="33%" height="1px"></td>
+												<td width="34%" height="1px" style="border-bottom:1px solid #E0E0E0;"></td>
+												<td width="33%" height="1px"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="25px">
+									</td>
+								</tr>
+								<!-- End Devider -->
+								<!-- Flight Information -->
+								<tr>
+									<td width="100%" align="center" bgcolor="#ffffff">
+										<table width="84%" align="center" bgcolor="#ffffff">
+											<tr>
+												<td width="100%" align="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:16px; color:#2F80ED; line-height:1.3em; font-style:regular; font-weight:700;">
+													Flight Information
+												</td>
+											</tr>
+											<tr>
+												<td height="5px">
+												</td>
+											</tr>
+											<tr>
+												<td width="100%" align="center" bgcolor="#ffffff" valign="top">
+													<table width="100%" align="center" bgcolor="#ffffff">
+														<tr>
+															<td style="width:58%" align="center" valign="top" class="leftcolumn">
+																<table width="100%" align="center" bgcolor="#ffffff">
+																	<tr bgcolor="#F7F7F7" >
+																		<td width="88px" height="30px" align="left" valign="center" bgcolor="#F7F7F7"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;">
+																		From:
+																		</td>
+																		<td width="197px" height="30px" align="left" valign="center" bgcolor="#F7F7F7"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		New York City, USA(JFK)
+																		</td>
+																	</tr>
+																	<tr bgcolor="#ffffff">
+																		<td width="88px" height="30px" align="left" valign="center" bgcolor="#ffffff"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		To:
+																		</td>
+																		<td width="197px" height="30px" align="left" valign="center" bgcolor="#ffffff"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		Paris, France(CDG)
+																		</td>
+																	</tr>
+																	<tr bgcolor="#F7F7F7">
+																		<td width="88px" height="30px" align="left" valign="center" bgcolor="#F7F7F7"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		Price:
+																		</td>
+																		<td width="197px" height="30px" align="left" valign="center" bgcolor="#F7F7F7"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#2D89F8; line-height:normal; font-style:regular; font-weight:500;" >
+																		$300
+																		</td>
+																	</tr>
+																	<tr bgcolor="#ffffff">
+																		<td width="88px" height="30px" align="left" valign="center" bgcolor="#ffffff"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		Normal Price:
+																		</td>
+																		<td width="197px" height="30px" align="left" valign="center" bgcolor="#ffffff"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#F24444; line-height:normal; font-style:regular; font-weight:500;" >
+																		$900
+																		</td>
+																	</tr>
+																	<tr bgcolor="#F7F7F7">
+																		<td width="88px" height="60px" align="left" valign="center" bgcolor="#F7F7F7"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		When:
+																		</td>
+																		<td width="197px" align="left" valign="center" bgcolor="#F7F7F7"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" height="60px" >
+																		A few dates within the range of August 4th-19th and other weekends in September.
+																		</td>
+																	</tr>
+																	<tr bgcolor="#ffffff">
+																		<td width="88px" height="50px" align="left" valign="center" bgcolor="#ffffff"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		First Out-Last Back:
+																		</td>
+																		<td width="197px" height="50px" align="left" valign="center" bgcolor="#ffffff"  style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" height="50px" >
+																		August 4th, 2017- September 28, 2017
+																		</td>
+																	</tr>
+																	<tr bgcolor="#F7F7F7">
+																		<td width="88px" height="30px" align="left" valign="center" bgcolor="#F7F7F7" style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" >
+																		Airline:
+																		</td>
+																		<td width="197px" align="left" valign="center" bgcolor="#F7F7F7" style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;" height="30px" >
+																		United and Air America
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td style="width:42%" align="center" valign="top" class="rightcolumn">
+																<table width="100%" align="left" bgcolor="#ffffff">
+																	<tr>
+																		<td width="100%" align="center" >
+																			<div style="font-family: Arial, Helvetica, sans-serif;font-size:14px;margin:auto;width:210px;height:290px;">
+																				<div style="max-height:0;overflow:visible !important;">
+																					<div style="width: 208px;height: auto;margin-top:0px;margin-left:0px;display:inline-block;">
+																						<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/ceec0a51-99d5-477b-b58b-4cee6643a500.png" style="width: 208px;height: 285px;" class="map"/>
+																					</div>
+																				</div>
+																				
+																				<div style="font-family: Arial, Helvetica, sans-serif;font-size:14px;">
+																					<a href="#" style="font-family: Arial, Helvetica, sans-serif;text-decoration:none;"><img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/1494b5e2-349e-4d6d-9e15-c13c774746f8.png" width="155px" style=" width:135px; margin-top:110px; margin-left:0px; font-family: Arial, Helvetica, sans-serif;font-size:14px;max-width:155px;max-height:55px;overflow:visible;" class="button"/></a>
+																				</div>
+																			</div>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td width="100%" align="left" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:12px; color:#000000; line-height:normal; font-style:regular; font-weight:500;padding-top:5px" >
+												Note: These prices could change at any time. Click that sample searchand look around. If you can't find the deal...it could already be gone.
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- End Flight Information -->
+								<!-- Devider -->
+								<tr>
+									<td height="35px">
+									</td>
+								</tr>
+								<tr>
+									<td width="100%">
+										<table width="100%">
+											<tr>
+												<td width="33%" height="1px"></td>
+												<td width="34%" height="1px" style="border-bottom:1px solid #E0E0E0;"></td>
+												<td width="33%" height="1px"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="25px">
+									</td>
+								</tr>
+								<!-- End Devider -->
+								<!-- StayPals2 -->
+								<tr>
+									<td width="100%" align="center" bgcolor="#ffffff">
+										<table width="88%" align="center" bgcolor="#ffffff">
+											<tr>
+												<td width="100%" align="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:16px; color:#2F80ED; line-height:normal; font-style:regular; font-weight:500;padding-top:5px" >
+												<span style="color:#F18472">Your</span> StayPals and StayPals² in <span style="color:#F18472">Paris</span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table width="100%" align="center" bgcolor="#ffffff">
+														<tr>
+															<td width="16.66%" align="center" valign="top" bgcolor="#ffffff">
+																<table width="100%">
+																	<tr>
+																		<td width="100%" style="border: 1px solid #000">
+																			<a href="#" style="font-family: Arial, Helvetica, sans-serif;text-decoration:none;">
+																				<table width="100%" align="center" valign="top" bgcolor="#ffffff">
+																					<tr>
+																						<td align="center" valign="center" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" alt="Staypal Pic" width="4.2rem" style="margin: 0 0 5px; vertical-align: middle; display: inline-block;width: 100%; max-width: 4.2rem; border-radius: 50%;" class="staypalimg"/>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="center" valign="center" bgcolor="#ffffff"style="font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:16px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							Mostafa Hefny
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							Staypal
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							Mostafa's Apartment
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							Livingroom Couch
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							Sleeps2
+																						</td>
+																					</tr>
+																					<tr>
+																						<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							Dogs
+																						</td>
+																					</tr>
+																					<tr colspan="6">
+																						<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																							Children
+																						</td>
+																					</tr>
+																				</table>
+																			</a>
+																		</td>
+																	</tr>
+																	<tr >
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:16px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#2F80ED;" class="staypalcol">
+																			<a href="#" style="font-family: Arial, Helvetica, sans-serif;text-decoration:none; color:#2F80ED;">+1 Other Room</a>
+																			</td>
+																	</tr>
+																	
+																</table>
+															</td>
+															<td width="16.66%" align="center" valign="top" bgcolor="#ffffff">
+																<table>
+																	<tr>
+																		<td align="center" valign="center" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" alt="Staypal Pic" width="4.2rem" style="margin: 0 0 5px; vertical-align: middle; display: inline-block;width: 100%; max-width: 4.2rem; border-radius: 50%;" class="staypalimg"/>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff"style="font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:16px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa Hefny
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Staypal
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa's Apartment
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Livingroom Couch
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Sleeps2
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Private Room
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td width="16.66%" align="center" valign="top" bgcolor="#ffffff">
+																<table>
+																	<tr>
+																		<td align="center" valign="center" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" alt="Staypal Pic" width="4.2rem" style="margin: 0 0 5px; vertical-align: middle; display: inline-block;width: 100%; max-width: 4.2rem; border-radius: 50%;" class="staypalimg"/>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff"style="font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:16px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa Hefny
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Staypal
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa's Apartment
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Livingroom Couch
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Sleeps2
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Private Room
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td width="16.66%" align="center" valign="top" bgcolor="#ffffff">
+																<table>
+																	<tr>
+																		<td align="center" valign="center" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" alt="Staypal Pic" width="4.2rem" style="margin: 0 0 5px; vertical-align: middle; display: inline-block;width: 100%; max-width: 4.2rem; border-radius: 50%;" class="staypalimg"/>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff"style="font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:16px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa Hefny
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Staypal
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa's Apartment
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Livingroom Couch
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Sleeps2
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Private Room
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td width="16.66%" align="center" valign="top" bgcolor="#ffffff">
+																<table>
+																	<tr>
+																		<td align="center" valign="center" style="font-family: Arial, Helvetica, sans-serif;font-size:14px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/8f4929ae-02bb-4a1c-aad3-ce3f18d788d0.jpg" alt="Staypal Pic" width="4.2rem" style="margin: 0 0 5px; vertical-align: middle; display: inline-block;width: 100%; max-width: 4.2rem; border-radius: 50%;" class="staypalimg"/>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff"style="font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:16px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa Hefny
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Staypal
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Mostafa's Apartment
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Livingroom Couch
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#ffffff" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Sleeps2
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" valign="center" bgcolor="#E5E5E5" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height:12px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#4F4F4F;" class="staypalcol">
+																			Private Room
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td width="16.7%" align="center" valign="top" bgcolor="#ffffff">
+																<a href="#" style="font-family: Arial, Helvetica, sans-serif;text-decoration:none; color:#2F80ED;">
+																	<table style="padding-top:5px;">
+																		<tr>
+																			<td width="45px" height="45px" bgcolor="#2F80ED" class="staypalinfo" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; font-style:normal; line-height:normal; line-height:42px; font-weight: bold; color: #ffffff;-webkit-border-radius:5px;border-color:#2F80ED;border-style:solid;border-width:0px;border-radius:50%" align="center">+58</td>
+																		</tr>
+																		<tr>
+																			<td height="10px">
+																			</td>
+																		</tr>
+																		<tr>
+																			<td align="center" valign="center" bgcolor="#ffffff"style="font-family: Arial, Helvetica, sans-serif;font-size:14px;line-height:16px;vertical-align:top;margin:0;width: 100%;max-width: 80px;padding: 0;display: inline-block; color:#2F80ED;" class="staypalcol">
+																				more...
+																			</td>
+																		</tr>
+																	</table>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- End StayPals2 -->
+								<tr>
+									<td height="20px">
+									</td>
+								</tr>
+								<!--CTA button -->
+								<tr>
+									<td align="center">
+									  <table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+										  <td bgcolor="#2F80ED" style="padding: 0px 15px 0px 15px; -webkit-border-radius:5px;border-color:#2F80ED;border-style:solid;border-width:0px; border-radius:5px" align="center"><a href="https://staycircles.com/" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size:14px; font-style:normal; line-height:normal; line-height:37px; font-weight: bold; color: #ffffff; text-decoration: none; display: inline-block;">Search StayCircles Map</a></td>
+										</tr>
+									  </table>
+									</td>
+								</tr>
+								<!--End CTA button -->
+								<tr>
+									<td height="35px">
+									</td>
+								</tr>
+								<tr>
+									<td width="100%">
+										<table width="100%">
+											<tr>
+												<td width=".5%" height="1px"></td>
+												<td width="99%" height="1px" style="border-top:1px solid #E0E0E0;"></td>
+												<td width=".5%" height="1px"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="25px">
+									</td>
+								</tr>
+								<!-- Footer -->
+								<tr style="font-family: Arial, Helvetica, sans-serif;font-size:14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+									<td style="font-family: Arial, Helvetica, sans-serif;font-size:14px;" width="100%" align="center" bgcolor="#fff">
+										<table style="font-family: Arial, Helvetica, sans-serif;font-size:14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;" bgcolor="#fff" width="100%" cellpadding="0" cellspacing="0">
+											<tr style="font-family: Arial, Helvetica, sans-serif;font-size:14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+												<td align="center">
+													<img src="https://gallery.mailchimp.com/b081395665b6bee4a8b975ecd/images/ab28342a-06bf-4efb-adcd-b53b115b57a3.jpg" alt="img" width="73" height="18" />
+												</td>
+											</tr>
+											<tr style="font-family: Arial, Helvetica, sans-serif;font-size:14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+												<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#444444; line-height:12px; font-weight:400; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+													Sent with hustle by StayCircles.<br>If you’d rather not get these emails, you can <a href="https://staycircles.com/">unsubscribe here:(</a>
+												</td>
+											</tr>
+											<tr>
+												<td height="30"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!--End Footer -->
+							</table>
+							<!-- End Header and content table -->
+						</div> <!-- End Wrapper -->
+					</td> <!-- End Main td -->
+				</tr>
+				<!-- End Main/parent row -->
+			</tbody>
+		</table>
+		<!-- End main table -->
+	</body>
+</html>
+
+
+
+											
